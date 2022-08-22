@@ -7080,7 +7080,7 @@
                     mode: "closed"
                 })
                   , s = document.createElement("style");
-                s.textContent = `\n    canvas {\n      width: 100%;\n      height: ${i}px;\n      position: absolute;\n      top: 0;\n      left: 0;\n      cursor: 'default';\n    }\n    .full {\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      top: 0;\n      left: 0;\n      image-rendering: pixelated;\n    }\n    .content-bubble {\n      position: absolute;\n      width: 650px;\n      height: 314px;\n      top: 24px;\n      left: 634px;\n      background: url(${n.fF ? "/guide/bubble.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/fqC498nGEQ.png"});\n    }\n    .option-bubble {\n      width: 220px;\n      height: 80px;\n      background: url(${n.fF ? "/guide/bubble_option.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/x0KtnfZvTq.png"});\n      cursor: pointer;\n      text-align: center;\n      font-size: 24px;\n      line-height: 24px;\n      color: rgb(89, 164, 87);\n      box-sizing: border-box;\n      padding-top: 28px;\n      padding-right: 28px;\n      transition: 0.3s\n    }\n    .option-bubble:hover {\n      transform: translateY(-5px);\n    }\n    .end-content-left {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 70px;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      box-sizing: border-box;\n      padding-left: 20px;\n    }\n    .end-content-right {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 310px;\n      font-size: 24px;\n      color: rgb(116, 167, 166);\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n    }\n    .end-content-right span {\n      color: #a4d341;\n      letter-spacing: -3px;\n      margin-right: 3px;\n    }\n    .end-option-icon {\n      position: absolute;\n      width: 36px;\n      height: 36px;\n      top: 20px;\n      left: 160px;\n      background-size: 100%;\n      background-repeat: no-repeat;\n      background-position: center;\n    }\n\n    .score {\n      position: absolute;\n      color: #fff;\n      top: 48px;\n      right: 24px;\n      text-shadow: 3px 3px #000;\n      display: flex;\n      align-items: center;\n      justify-content: flex-end;\n      width: 240px;\n      height: 32px;\n      transform: scale(1.5);\n      transform-origin: right;\n    }\n    .number {\n      width: 24px;\n      height: 32px;\n      background-image: url(https://i0.hdslb.com/bfs/activity-plat/static/20220316/00979505aec5edd6e5c2f8c096fa0f62/ZP51pxsKWj.png);\n      background-repeat: no-repeat;\n      background-size: 240px 32px;\n      image-rendering: pixelated;\n    }\n  `,
+                s.textContent = `\n    canvas {\n      width: 100%;\n      height: ${i}px;\n      position: absolute;\n      top: 0;\n      left: 0;\n      cursor: 'default';\n    }\n    .full {\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      top: 0;\n      left: 0;\n      image-rendering: pixelated;\n    }\n    .content-bubble {\n      position: absolute;\n      width: 650px;\n      height: 314px;\n      top: 24px;\n      left: 634px;\n      background: url(${n.fF ? "/guide/bubble.png" : "/00979505aec5edd6e5c2f8c096fa0f62/fqC498nGEQ.png"});\n    }\n    .option-bubble {\n      width: 220px;\n      height: 80px;\n      background: url(${n.fF ? "/guide/bubble_option.png" : "/00979505aec5edd6e5c2f8c096fa0f62/x0KtnfZvTq.png"});\n      cursor: pointer;\n      text-align: center;\n      font-size: 24px;\n      line-height: 24px;\n      color: rgb(89, 164, 87);\n      box-sizing: border-box;\n      padding-top: 28px;\n      padding-right: 28px;\n      transition: 0.3s\n    }\n    .option-bubble:hover {\n      transform: translateY(-5px);\n    }\n    .end-content-left {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 70px;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      box-sizing: border-box;\n      padding-left: 20px;\n    }\n    .end-content-right {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 310px;\n      font-size: 24px;\n      color: rgb(116, 167, 166);\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n    }\n    .end-content-right span {\n      color: #a4d341;\n      letter-spacing: -3px;\n      margin-right: 3px;\n    }\n    .end-option-icon {\n      position: absolute;\n      width: 36px;\n      height: 36px;\n      top: 20px;\n      left: 160px;\n      background-size: 100%;\n      background-repeat: no-repeat;\n      background-position: center;\n    }\n\n    .score {\n      position: absolute;\n      color: #fff;\n      top: 48px;\n      right: 24px;\n      text-shadow: 3px 3px #000;\n      display: flex;\n      align-items: center;\n      justify-content: flex-end;\n      width: 240px;\n      height: 32px;\n      transform: scale(1.5);\n      transform-origin: right;\n    }\n    .number {\n      width: 24px;\n      height: 32px;\n      background-image: url(https://i0.hdslb.com/bfs/activity-plat/static/20220316/00979505aec5edd6e5c2f8c096fa0f62/ZP51pxsKWj.png);\n      background-repeat: no-repeat;\n      background-size: 240px 32px;\n      image-rendering: pixelated;\n    }\n  `,
                 r.appendChild(s);
                 const a = document.createElement("canvas");
                 a.width = 1920,
@@ -7093,7 +7093,7 @@
                     display: "none",
                     opacity: "0",
                     transition: "opacity 0.5s",
-                    backgroundImage: `url(${n.fF ? "/guide/end_cover.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/3xqAauWyWp.png"})`,
+                    backgroundImage: `url(${n.fF ? "/guide/end_cover.png" : "/00979505aec5edd6e5c2f8c096fa0f62/3xqAauWyWp.png"})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat"
                 });
@@ -7168,11 +7168,11 @@
                 }, {
                     y: 121,
                     text: "分享结果",
-                    icon: n.fF ? "/guide/share.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/L64vnF6vEL.png"
+                    icon: n.fF ? "/guide/share.png" : "/00979505aec5edd6e5c2f8c096fa0f62/L64vnF6vEL.png"
                 }, {
                     y: 209,
                     text: "回看教程",
-                    icon: n.fF ? "/guide/book.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/bZ4QGDKRXu.png"
+                    icon: n.fF ? "/guide/book.png" : "/00979505aec5edd6e5c2f8c096fa0f62/bZ4QGDKRXu.png"
                 }].map(((e,t)=>{
                     const i = document.createElement("div");
                     if (i.classList.add("option-bubble"),
@@ -7317,33 +7317,33 @@
                 }
             }
               , u = {
-                "/sprite/background/sky.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220217/00979505aec5edd6e5c2f8c096fa0f62/1Pf3J23kur.png",
-                "/sprite/background/clouds.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220217/00979505aec5edd6e5c2f8c096fa0f62/rvRI0G1BmS.png",
-                "/sprite/background/mountain.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220217/00979505aec5edd6e5c2f8c096fa0f62/LuWoq27X7W.png",
-                "/sprite/background/near.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220217/00979505aec5edd6e5c2f8c096fa0f62/AkmiDNoNFy.png",
-                "/sprite/background/space.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220308/00979505aec5edd6e5c2f8c096fa0f62/hllMZ39mFV.png",
-                "/sprite/leaves/leaves1.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220224/00979505aec5edd6e5c2f8c096fa0f62/w66W8qKtsi.png",
-                "/sprite/leaves/leaves2.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220224/00979505aec5edd6e5c2f8c096fa0f62/we0s57YZSN.png",
-                "/sprite/leaves/leaves3.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220224/00979505aec5edd6e5c2f8c096fa0f62/V90uva9Va2.png",
-                "/sprite/leaves/leaves4.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220224/00979505aec5edd6e5c2f8c096fa0f62/IA21PIMRvD.png",
-                "/sprite/22.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220308/00979505aec5edd6e5c2f8c096fa0f62/hXJaoTXC37.png",
-                "/sprite/33.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220304/00979505aec5edd6e5c2f8c096fa0f62/SNPes6slpr.png",
-                "/sprite/shamrocks/shamrock1.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220225/00979505aec5edd6e5c2f8c096fa0f62/1r6uJBboeZ.png",
-                "/sprite/shamrocks/shamrock2.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220225/00979505aec5edd6e5c2f8c096fa0f62/56CwjhVTVg.png",
-                "/sprite/shamrocks/shamrock3.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220225/00979505aec5edd6e5c2f8c096fa0f62/XSPA4yDs52.png",
-                "/sprite/shamrocks/shamrock4.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220225/00979505aec5edd6e5c2f8c096fa0f62/ahwB6bVcGw.png",
-                "/sprite/shamrocks/shamrock_trap.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/KFDYJVlhgT.png",
-                "/sprite/shamrocks/shamrock_lucky.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/A29O65miDc.png",
-                "/sprite/wind/wind1.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/h90zWlIavR.png",
-                "/sprite/wind/wind2.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/mjTIdrD1yz.png",
-                "/sprite/wind/wind3.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/oUz5oLVDl0.png",
-                "/sprite/wind/wind4.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/hffVhQpxwA.png",
-                "/sprite/bird/bird.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220316/00979505aec5edd6e5c2f8c096fa0f62/lxv3u3Y9ev.png",
-                "/sprite/bird/numbers.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220316/00979505aec5edd6e5c2f8c096fa0f62/ZP51pxsKWj.png",
-                "/sprite/bird/numbers2.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220316/00979505aec5edd6e5c2f8c096fa0f62/oMP50YCuMA.png",
-                "/sprite/count.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220323/00979505aec5edd6e5c2f8c096fa0f62/SFB0E2Z4gz.png",
-                "/guide/bubble.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/fqC498nGEQ.png",
-                "/guide/end_cover.png": "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/3xqAauWyWp.png"
+                "/sprite/background/sky.png": "./png/1Pf3J23kur.png",
+                "/sprite/background/clouds.png": "./png/rvRI0G1BmS.png",
+                "/sprite/background/mountain.png": "./png/LuWoq27X7W.png",
+                "/sprite/background/near.png": "./png/AkmiDNoNFy.png",
+                "/sprite/background/space.png": "./png/hllMZ39mFV.png",
+                "/sprite/leaves/leaves1.png": "./png/w66W8qKtsi.png",
+                "/sprite/leaves/leaves2.png": "./png/we0s57YZSN.png",
+                "/sprite/leaves/leaves3.png": "./png/V90uva9Va2.png",
+                "/sprite/leaves/leaves4.png": "./png/IA21PIMRvD.png",
+                "/sprite/22.png": "./png/hXJaoTXC37.png",
+                "/sprite/33.png": "./png/SNPes6slpr.png",
+                "/sprite/shamrocks/shamrock1.png": "./png/1r6uJBboeZ.png",
+                "/sprite/shamrocks/shamrock2.png": "./png/56CwjhVTVg.png",
+                "/sprite/shamrocks/shamrock3.png": "./png/XSPA4yDs52.png",
+                "/sprite/shamrocks/shamrock4.png": "./png/ahwB6bVcGw.png",
+                "/sprite/shamrocks/shamrock_trap.png": "./png/KFDYJVlhgT.png",
+                "/sprite/shamrocks/shamrock_lucky.png": "./png/A29O65miDc.png",
+                "/sprite/wind/wind1.png": "./png/h90zWlIavR.png",
+                "/sprite/wind/wind2.png": "./png/mjTIdrD1yz.png",
+                "/sprite/wind/wind3.png": "./png/oUz5oLVDl0.png",
+                "/sprite/wind/wind4.png": "./png/hffVhQpxwA.png",
+                "/sprite/bird/bird.png": "./png/lxv3u3Y9ev.png",
+                "/sprite/bird/numbers.png": "./png/ZP51pxsKWj.png",
+                "/sprite/bird/numbers2.png": "./png/oMP50YCuMA.png",
+                "/sprite/count.png": "./png/SFB0E2Z4gz.png",
+                "/guide/bubble.png": "./png/fqC498nGEQ.png",
+                "/guide/end_cover.png": "./png/3xqAauWyWp.png"
             }
               , p = {
                 "/sprite/22.json": "https://activity.hdslb.com/blackboard/static/20220308/00979505aec5edd6e5c2f8c096fa0f62/mhFnJ3WgCI.json",
@@ -7696,11 +7696,11 @@
             const o = n.fF ? new Array(10).fill(0).map(((e,t)=>({
                 c: `/guide/${t + 1}.png`
             }))) : [{
-                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/IjRnuJVAMU.png"
+                c: "/00979505aec5edd6e5c2f8c096fa0f62/IjRnuJVAMU.png"
             }, {
-                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/NtXwfLTm8r.png"
+                c: "/00979505aec5edd6e5c2f8c096fa0f62/NtXwfLTm8r.png"
             }, {
-                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/sKIvMZvfqJ.png"
+                c: "/00979505aec5edd6e5c2f8c096fa0f62/sKIvMZvfqJ.png"
             }, {
                 c: "https://i0.hdslb.com/bfs/activity-plat/static/20220323/00979505aec5edd6e5c2f8c096fa0f62/H6ysLDyYzc.png"
             }, {
@@ -7710,13 +7710,13 @@
             }, {
                 c: "https://i0.hdslb.com/bfs/activity-plat/static/20220323/00979505aec5edd6e5c2f8c096fa0f62/n2Pw2iT2r1.png"
             }, {
-                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/ODZkSkGrlS.png"
+                c: "/00979505aec5edd6e5c2f8c096fa0f62/ODZkSkGrlS.png"
             }, {
-                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/KWGhLKKHic.png"
+                c: "/00979505aec5edd6e5c2f8c096fa0f62/KWGhLKKHic.png"
             }, {
-                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/QpEVse7WKu.png"
+                c: "/00979505aec5edd6e5c2f8c096fa0f62/QpEVse7WKu.png"
             }, {
-                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/vBuQkSZx0C.png"
+                c: "/00979505aec5edd6e5c2f8c096fa0f62/vBuQkSZx0C.png"
             }]
               , r = (e,t,i,r=!1)=>{
                 let s = 0;
@@ -7740,7 +7740,7 @@
                     transform: `scale(${t || 1})`
                 });
                 const c = document.createElement("style");
-                c.textContent = `\n  .guide-close {\n    position: absolute;\n    width: 58px;\n    height: 58px;\n    top: 28px;\n    left: 1132px;\n    cursor: pointer;\n    background: url(${n.fF ? "/guide/x.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/pDRaxEfL5S.png"});\n  }\n  .guide-arrow {\n    position: absolute;\n    width: 40px;\n    height: 30px;\n    top: 24px;\n    left: 160px;\n    background: url(${n.fF ? "/guide/arrow.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/ZWZ5JWBR7W.png"});\n  }\n  @keyframes arrow_floating {\n    from { transform: translateX(0px); }\n    to   { transform: translateX(5px); }\n  }\n  @keyframes arrow_floating_r {\n    from { transform: scaleX(-1) translateX(0px); }\n    to   { transform: scaleX(-1) translateX(-5px); }\n  }\n  `,
+                c.textContent = `\n  .guide-close {\n    position: absolute;\n    width: 58px;\n    height: 58px;\n    top: 28px;\n    left: 1132px;\n    cursor: pointer;\n    background: url(${n.fF ? "/guide/x.png" : "/00979505aec5edd6e5c2f8c096fa0f62/pDRaxEfL5S.png"});\n  }\n  .guide-arrow {\n    position: absolute;\n    width: 40px;\n    height: 30px;\n    top: 24px;\n    left: 160px;\n    background: url(${n.fF ? "/guide/arrow.png" : "/00979505aec5edd6e5c2f8c096fa0f62/ZWZ5JWBR7W.png"});\n  }\n  @keyframes arrow_floating {\n    from { transform: translateX(0px); }\n    to   { transform: translateX(5px); }\n  }\n  @keyframes arrow_floating_r {\n    from { transform: scaleX(-1) translateX(0px); }\n    to   { transform: scaleX(-1) translateX(-5px); }\n  }\n  `,
                 l.appendChild(c);
                 const d = document.createElement("div");
                 d.classList.add("content-bubble"),
