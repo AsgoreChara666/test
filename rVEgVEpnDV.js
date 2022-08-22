@@ -8497,8 +8497,7 @@
                         const e = this.genNormal();
                         e.position = [n, s, this.lastZIndex],
                         this.normalNode.addChild(e),
-                        this.lastAddType = "normal"
-                    }
+                        this.lastAddType = "normal"}
                     if (s > 80 || s < -60) {
                         this.lastZIndex = this.lastZIndex + .1;
                         let i = (0,
