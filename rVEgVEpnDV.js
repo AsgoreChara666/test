@@ -7080,7 +7080,7 @@
                     mode: "closed"
                 })
                   , s = document.createElement("style");
-                s.textContent = `\n    canvas {\n      width: 100%;\n      height: ${i}px;\n      position: absolute;\n      top: 0;\n      left: 0;\n      cursor: 'default';\n    }\n    .full {\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      top: 0;\n      left: 0;\n      image-rendering: pixelated;\n    }\n    .content-bubble {\n      position: absolute;\n      width: 650px;\n      height: 314px;\n      top: 24px;\n      left: 634px;\n      background: url(${n.fF ? "/guide/bubble.png" : "./png/fqC498nGEQ.png"});\n    }\n    .option-bubble {\n      width: 220px;\n      height: 80px;\n      background: url(${n.fF ? "/guide/bubble_option.png" : "./png/x0KtnfZvTq.png"});\n      cursor: pointer;\n      text-align: center;\n      font-size: 24px;\n      line-height: 24px;\n      color: rgb(89, 164, 87);\n      box-sizing: border-box;\n      padding-top: 28px;\n      padding-right: 28px;\n      transition: 0.3s\n    }\n    .option-bubble:hover {\n      transform: translateY(-5px);\n    }\n    .end-content-left {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 70px;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      box-sizing: border-box;\n      padding-left: 20px;\n    }\n    .end-content-right {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 310px;\n      font-size: 24px;\n      color: rgb(116, 167, 166);\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n    }\n    .end-content-right span {\n      color: #a4d341;\n      letter-spacing: -3px;\n      margin-right: 3px;\n    }\n    .end-option-icon {\n      position: absolute;\n      width: 36px;\n      height: 36px;\n      top: 20px;\n      left: 160px;\n      background-size: 100%;\n      background-repeat: no-repeat;\n      background-position: center;\n    }\n\n    .score {\n      position: absolute;\n      color: #fff;\n      top: 48px;\n      right: 24px;\n      text-shadow: 3px 3px #000;\n      display: flex;\n      align-items: center;\n      justify-content: flex-end;\n      width: 240px;\n      height: 32px;\n      transform: scale(1.5);\n      transform-origin: right;\n    }\n    .number {\n      width: 24px;\n      height: 32px;\n      background-image: url(./png/ZP51pxsKWj.png);\n      background-repeat: no-repeat;\n      background-size: 240px 32px;\n      image-rendering: pixelated;\n    }\n  `,
+                s.textContent = `\n    canvas {\n      width: 100%;\n      height: ${i}px;\n      position: absolute;\n      top: 0;\n      left: 0;\n      cursor: 'default';\n    }\n    .full {\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      top: 0;\n      left: 0;\n      image-rendering: pixelated;\n    }\n    .content-bubble {\n      position: absolute;\n      width: 650px;\n      height: 314px;\n      top: 24px;\n      left: 634px;\n      background: url(${n.fF ? "/guide/bubble.png" : "./png/fqC498nGEQ.png"});\n    }\n    .option-bubble {\n      width: 220px;\n      height: 80px;\n      background: url(${n.fF ? "/guide/bubble_option.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/x0KtnfZvTq.png"});\n      cursor: pointer;\n      text-align: center;\n      font-size: 24px;\n      line-height: 24px;\n      color: rgb(89, 164, 87);\n      box-sizing: border-box;\n      padding-top: 28px;\n      padding-right: 28px;\n      transition: 0.3s\n    }\n    .option-bubble:hover {\n      transform: translateY(-5px);\n    }\n    .end-content-left {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 70px;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      box-sizing: border-box;\n      padding-left: 20px;\n    }\n    .end-content-right {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 310px;\n      font-size: 24px;\n      color: rgb(116, 167, 166);\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n    }\n    .end-content-right span {\n      color: #a4d341;\n      letter-spacing: -3px;\n      margin-right: 3px;\n    }\n    .end-option-icon {\n      position: absolute;\n      width: 36px;\n      height: 36px;\n      top: 20px;\n      left: 160px;\n      background-size: 100%;\n      background-repeat: no-repeat;\n      background-position: center;\n    }\n\n    .score {\n      position: absolute;\n      color: #fff;\n      top: 48px;\n      right: 24px;\n      text-shadow: 3px 3px #000;\n      display: flex;\n      align-items: center;\n      justify-content: flex-end;\n      width: 240px;\n      height: 32px;\n      transform: scale(1.5);\n      transform-origin: right;\n    }\n    .number {\n      width: 24px;\n      height: 32px;\n      background-image: url(https://i0.hdslb.com/bfs/activity-plat/static/20220316/00979505aec5edd6e5c2f8c096fa0f62/ZP51pxsKWj.png);\n      background-repeat: no-repeat;\n      background-size: 240px 32px;\n      image-rendering: pixelated;\n    }\n  `,
                 r.appendChild(s);
                 const a = document.createElement("canvas");
                 a.width = 1920,
@@ -7168,11 +7168,11 @@
                 }, {
                     y: 121,
                     text: "分享结果",
-                    icon: n.fF ? "/guide/share.png" : "/00979505aec5edd6e5c2f8c096fa0f62/L64vnF6vEL.png"
+                    icon: n.fF ? "/guide/share.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/L64vnF6vEL.png"
                 }, {
                     y: 209,
                     text: "回看教程",
-                    icon: n.fF ? "/guide/book.png" : "/00979505aec5edd6e5c2f8c096fa0f62/bZ4QGDKRXu.png"
+                    icon: n.fF ? "/guide/book.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/bZ4QGDKRXu.png"
                 }].map(((e,t)=>{
                     const i = document.createElement("div");
                     if (i.classList.add("option-bubble"),
@@ -7371,7 +7371,7 @@
             )();
             Object.keys(u).forEach((e=>{
                 d[e] = {
-                    src: r ? e : h ? u[e] : u[e],
+                    src: r ? e : h ? u[e] + : u[e],
                     type: "image"
                 }
             }
@@ -7696,11 +7696,11 @@
             const o = n.fF ? new Array(10).fill(0).map(((e,t)=>({
                 c: `/guide/${t + 1}.png`
             }))) : [{
-                c: "/00979505aec5edd6e5c2f8c096fa0f62/IjRnuJVAMU.png"
+                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/IjRnuJVAMU.png"
             }, {
-                c: "/00979505aec5edd6e5c2f8c096fa0f62/NtXwfLTm8r.png"
+                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/NtXwfLTm8r.png"
             }, {
-                c: "/00979505aec5edd6e5c2f8c096fa0f62/sKIvMZvfqJ.png"
+                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/sKIvMZvfqJ.png"
             }, {
                 c: "https://i0.hdslb.com/bfs/activity-plat/static/20220323/00979505aec5edd6e5c2f8c096fa0f62/H6ysLDyYzc.png"
             }, {
@@ -7710,13 +7710,13 @@
             }, {
                 c: "https://i0.hdslb.com/bfs/activity-plat/static/20220323/00979505aec5edd6e5c2f8c096fa0f62/n2Pw2iT2r1.png"
             }, {
-                c: "/00979505aec5edd6e5c2f8c096fa0f62/ODZkSkGrlS.png"
+                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/ODZkSkGrlS.png"
             }, {
-                c: "/00979505aec5edd6e5c2f8c096fa0f62/KWGhLKKHic.png"
+                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/KWGhLKKHic.png"
             }, {
-                c: "/00979505aec5edd6e5c2f8c096fa0f62/QpEVse7WKu.png"
+                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/QpEVse7WKu.png"
             }, {
-                c: "/00979505aec5edd6e5c2f8c096fa0f62/vBuQkSZx0C.png"
+                c: "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/vBuQkSZx0C.png"
             }]
               , r = (e,t,i,r=!1)=>{
                 let s = 0;
@@ -7740,7 +7740,7 @@
                     transform: `scale(${t || 1})`
                 });
                 const c = document.createElement("style");
-                c.textContent = `\n  .guide-close {\n    position: absolute;\n    width: 58px;\n    height: 58px;\n    top: 28px;\n    left: 1132px;\n    cursor: pointer;\n    background: url(${n.fF ? "/guide/x.png" : "/00979505aec5edd6e5c2f8c096fa0f62/pDRaxEfL5S.png"});\n  }\n  .guide-arrow {\n    position: absolute;\n    width: 40px;\n    height: 30px;\n    top: 24px;\n    left: 160px;\n    background: url(${n.fF ? "/guide/arrow.png" : "/00979505aec5edd6e5c2f8c096fa0f62/ZWZ5JWBR7W.png"});\n  }\n  @keyframes arrow_floating {\n    from { transform: translateX(0px); }\n    to   { transform: translateX(5px); }\n  }\n  @keyframes arrow_floating_r {\n    from { transform: scaleX(-1) translateX(0px); }\n    to   { transform: scaleX(-1) translateX(-5px); }\n  }\n  `,
+                c.textContent = `\n  .guide-close {\n    position: absolute;\n    width: 58px;\n    height: 58px;\n    top: 28px;\n    left: 1132px;\n    cursor: pointer;\n    background: url(${n.fF ? "/guide/x.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/pDRaxEfL5S.png"});\n  }\n  .guide-arrow {\n    position: absolute;\n    width: 40px;\n    height: 30px;\n    top: 24px;\n    left: 160px;\n    background: url(${n.fF ? "/guide/arrow.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/ZWZ5JWBR7W.png"});\n  }\n  @keyframes arrow_floating {\n    from { transform: translateX(0px); }\n    to   { transform: translateX(5px); }\n  }\n  @keyframes arrow_floating_r {\n    from { transform: scaleX(-1) translateX(0px); }\n    to   { transform: scaleX(-1) translateX(-5px); }\n  }\n  `,
                 l.appendChild(c);
                 const d = document.createElement("div");
                 d.classList.add("content-bubble"),
@@ -8460,8 +8460,8 @@
                     }[this.lastAddType]?.position || [0, 0, 0]
                 }
                 addNext() {
-                    const e = [-10, -10]
-                      , t = [-10, -10]
+                    const e = [50, 200]
+                      , t = [-100, 100]
                       , i = this.lastNodePosition;
                     if (!i)
                         return;
@@ -8477,19 +8477,20 @@
                     for (let e = 0; e < r.ed.length && !(r.ed[e].time > r.XH.duration); e++)
                         l = e;
                     const c = r.ed[l];
-                    if (a < 0){
+                    if (a < c.trap) {
                         "lucky" === this.lastAddType && (n = Math.max(150, n));
                         const e = this.genTrap();
                         n += i[0],
                         e.position = [n, s, this.lastZIndex],
                         this.trapNode.addChild(e),
                         this.lastAddType = "trap"
-                    } else if (a < c.lucky) {
+                    } else if (a < c.trap + c.lucky && r.XH.duration > this.allowLuckyAfter) {
                         const e = this.genLucky();
                         n += i[0],
                         e.position = [n, s, this.lastZIndex],
                         this.luckyNode.addChild(e),
                         this.lastAddType = "lucky",
+                        this.allowLuckyAfter = r.XH.duration + 3e4
                     } else {
                         "trap" !== this.lastAddType && "lucky" !== this.lastAddType || (n = Math.max(150, n)),
                         n += i[0];
