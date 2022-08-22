@@ -7080,7 +7080,7 @@
                     mode: "closed"
                 })
                   , s = document.createElement("style");
-                s.textContent = `\n    canvas {\n      width: 100%;\n      height: ${i}px;\n      position: absolute;\n      top: 0;\n      left: 0;\n      cursor: 'default';\n    }\n    .full {\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      top: 0;\n      left: 0;\n      image-rendering: pixelated;\n    }\n    .content-bubble {\n      position: absolute;\n      width: 650px;\n      height: 314px;\n      top: 24px;\n      left: 634px;\n      background: url(${n.fF ? "/guide/bubble.png" : "./png/fqC498nGEQ.png"});\n    }\n    .option-bubble {\n      width: 220px;\n      height: 80px;\n      background: url(${n.fF ? "/guide/bubble_option.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/x0KtnfZvTq.png"});\n      cursor: pointer;\n      text-align: center;\n      font-size: 24px;\n      line-height: 24px;\n      color: rgb(89, 164, 87);\n      box-sizing: border-box;\n      padding-top: 28px;\n      padding-right: 28px;\n      transition: 0.3s\n    }\n    .option-bubble:hover {\n      transform: translateY(-5px);\n    }\n    .end-content-left {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 70px;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      box-sizing: border-box;\n      padding-left: 20px;\n    }\n    .end-content-right {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 310px;\n      font-size: 24px;\n      color: rgb(116, 167, 166);\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n    }\n    .end-content-right span {\n      color: #a4d341;\n      letter-spacing: -3px;\n      margin-right: 3px;\n    }\n    .end-option-icon {\n      position: absolute;\n      width: 36px;\n      height: 36px;\n      top: 20px;\n      left: 160px;\n      background-size: 100%;\n      background-repeat: no-repeat;\n      background-position: center;\n    }\n\n    .score {\n      position: absolute;\n      color: #fff;\n      top: 48px;\n      right: 24px;\n      text-shadow: 3px 3px #000;\n      display: flex;\n      align-items: center;\n      justify-content: flex-end;\n      width: 240px;\n      height: 32px;\n      transform: scale(1.5);\n      transform-origin: right;\n    }\n    .number {\n      width: 24px;\n      height: 32px;\n      background-image: url(https://i0.hdslb.com/bfs/activity-plat/static/20220316/00979505aec5edd6e5c2f8c096fa0f62/ZP51pxsKWj.png);\n      background-repeat: no-repeat;\n      background-size: 240px 32px;\n      image-rendering: pixelated;\n    }\n  `,
+                s.textContent = `\n    canvas {\n      width: 100%;\n      height: ${i}px;\n      position: absolute;\n      top: 0;\n      left: 0;\n      cursor: 'default';\n    }\n    .full {\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      top: 0;\n      left: 0;\n      image-rendering: pixelated;\n    }\n    .content-bubble {\n      position: absolute;\n      width: 650px;\n      height: 314px;\n      top: 24px;\n      left: 634px;\n      background: url(${n.fF ? "/guide/bubble.png" : "./png/fqC498nGEQ.png"});\n    }\n    .option-bubble {\n      width: 220px;\n      height: 80px;\n      background: url(${n.fF ? "/guide/bubble_option.png" : "./png/x0KtnfZvTq.png"});\n      cursor: pointer;\n      text-align: center;\n      font-size: 24px;\n      line-height: 24px;\n      color: rgb(89, 164, 87);\n      box-sizing: border-box;\n      padding-top: 28px;\n      padding-right: 28px;\n      transition: 0.3s\n    }\n    .option-bubble:hover {\n      transform: translateY(-5px);\n    }\n    .end-content-left {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 70px;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      box-sizing: border-box;\n      padding-left: 20px;\n    }\n    .end-content-right {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 310px;\n      font-size: 24px;\n      color: rgb(116, 167, 166);\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n    }\n    .end-content-right span {\n      color: #a4d341;\n      letter-spacing: -3px;\n      margin-right: 3px;\n    }\n    .end-option-icon {\n      position: absolute;\n      width: 36px;\n      height: 36px;\n      top: 20px;\n      left: 160px;\n      background-size: 100%;\n      background-repeat: no-repeat;\n      background-position: center;\n    }\n\n    .score {\n      position: absolute;\n      color: #fff;\n      top: 48px;\n      right: 24px;\n      text-shadow: 3px 3px #000;\n      display: flex;\n      align-items: center;\n      justify-content: flex-end;\n      width: 240px;\n      height: 32px;\n      transform: scale(1.5);\n      transform-origin: right;\n    }\n    .number {\n      width: 24px;\n      height: 32px;\n      background-image: url(./png/ZP51pxsKWj.png);\n      background-repeat: no-repeat;\n      background-size: 240px 32px;\n      image-rendering: pixelated;\n    }\n  `,
                 r.appendChild(s);
                 const a = document.createElement("canvas");
                 a.width = 1920,
@@ -7168,11 +7168,11 @@
                 }, {
                     y: 121,
                     text: "分享结果",
-                    icon: n.fF ? "/guide/share.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/L64vnF6vEL.png"
+                    icon: n.fF ? "/guide/share.png" : "./png/L64vnF6vEL.png"
                 }, {
                     y: 209,
                     text: "回看教程",
-                    icon: n.fF ? "/guide/book.png" : "https://i0.hdslb.com/bfs/activity-plat/static/20220309/00979505aec5edd6e5c2f8c096fa0f62/bZ4QGDKRXu.png"
+                    icon: n.fF ? "/guide/book.png" : "./png/bZ4QGDKRXu.png"
                 }].map(((e,t)=>{
                     const i = document.createElement("div");
                     if (i.classList.add("option-bubble"),
@@ -7309,7 +7309,7 @@
             }
               , d = {
                 "/VonwaonBitmap-12px.woff2": {
-                    src: r ? "/VonwaonBitmap-12px.woff2" : "https://i0.hdslb.com/bfs/activity-plat/static/20220315/00979505aec5edd6e5c2f8c096fa0f62/g0JJ6atToR.woff2",
+                    src: r ? "/VonwaonBitmap-12px.woff2" : "./g0JJ6atToR.woff2",
                     type: "font",
                     options: {
                         name: "Vonwaon"
@@ -7346,20 +7346,20 @@
                 "/guide/end_cover.png": "./png/3xqAauWyWp.png"
             }
               , p = {
-                "/sprite/22.json": "https://activity.hdslb.com/blackboard/static/20220308/00979505aec5edd6e5c2f8c096fa0f62/mhFnJ3WgCI.json",
-                "/sprite/33.json": "https://activity.hdslb.com/blackboard/static/20220304/00979505aec5edd6e5c2f8c096fa0f62/bZ70VoHTmH.json",
-                "/sprite/shamrocks/shamrock1.json": "https://activity.hdslb.com/blackboard/static/20220225/00979505aec5edd6e5c2f8c096fa0f62/vQOKaRcQiQ.json",
-                "/sprite/shamrocks/shamrock2.json": "https://activity.hdslb.com/blackboard/static/20220225/00979505aec5edd6e5c2f8c096fa0f62/KKLdKJ60Tm.json",
-                "/sprite/shamrocks/shamrock3.json": "https://activity.hdslb.com/blackboard/static/20220225/00979505aec5edd6e5c2f8c096fa0f62/ECCbC7xZCf.json",
-                "/sprite/shamrocks/shamrock4.json": "https://activity.hdslb.com/blackboard/static/20220225/00979505aec5edd6e5c2f8c096fa0f62/jHhlzBK8lT.json",
-                "/sprite/shamrocks/shamrock_trap.json": "https://activity.hdslb.com/blackboard/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/ekSXHfFK0Q.json",
-                "/sprite/shamrocks/shamrock_lucky.json": "https://activity.hdslb.com/blackboard/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/jNCwVQWxuT.json",
-                "/sprite/wind/wind1.json": "https://activity.hdslb.com/blackboard/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/RIfIuimWkU.json",
-                "/sprite/wind/wind2.json": "https://activity.hdslb.com/blackboard/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/IHWo3trIPV.json",
-                "/sprite/wind/wind3.json": "https://activity.hdslb.com/blackboard/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/2pqUgkNUXm.json",
-                "/sprite/wind/wind4.json": "https://activity.hdslb.com/blackboard/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/ro0B1H3Ov8.json",
-                "/sprite/bird/bird.json": "https://activity.hdslb.com/blackboard/static/20220316/00979505aec5edd6e5c2f8c096fa0f62/VKYQz9AWcj.json",
-                "/sprite/count.json": "https://activity.hdslb.com/blackboard/static/20220323/00979505aec5edd6e5c2f8c096fa0f62/QUgV5pcBul.json"
+                "/sprite/22.json": "./json/mhFnJ3WgCI.json",
+                "/sprite/33.json": "./json/bZ70VoHTmH.json",
+                "/sprite/shamrocks/shamrock1.json": "./json/vQOKaRcQiQ.json",
+                "/sprite/shamrocks/shamrock2.json": "./json/KKLdKJ60Tm.json",
+                "/sprite/shamrocks/shamrock3.json": "./json/ECCbC7xZCf.json",
+                "/sprite/shamrocks/shamrock4.json": "./json/jHhlzBK8lT.json",
+                "/sprite/shamrocks/shamrock_trap.json": "./json/ekSXHfFK0Q.json",
+                "/sprite/shamrocks/shamrock_lucky.json": "./json/jNCwVQWxuT.json",
+                "/sprite/wind/wind1.json": "./json/RIfIuimWkU.json",
+                "/sprite/wind/wind2.json": "./json/IHWo3trIPV.json",
+                "/sprite/wind/wind3.json": "./json/2pqUgkNUXm.json",
+                "/sprite/wind/wind4.json": "./json/ro0B1H3Ov8.json",
+                "/sprite/bird/bird.json": "./json/VKYQz9AWcj.json",
+                "/sprite/count.json": "./json/QUgV5pcBul.json"
             }
               , h = (()=>{
                 try {
