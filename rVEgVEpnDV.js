@@ -7309,7 +7309,7 @@
             }
               , d = {
                 "/VonwaonBitmap-12px.woff2": {
-                    src: r ? "/VonwaonBitmap-12px.woff2" : "./g0JJ6atToR.woff2",
+                    src: r ? "/VonwaonBitmap-12px.woff2" : "https://i0.hdslb.com/bfs/activity-plat/static/20220315/00979505aec5edd6e5c2f8c096fa0f62/g0JJ6atToR.woff2",
                     type: "font",
                     options: {
                         name: "Vonwaon"
@@ -7371,7 +7371,7 @@
             )();
             Object.keys(u).forEach((e=>{
                 d[e] = {
-                    src: r ? e : h ? u[e] + : u[e],
+                    src: r ? e : h ? u[e] : u[e],
                     type: "image"
                 }
             }
@@ -8497,7 +8497,8 @@
                         const e = this.genNormal();
                         e.position = [n, s, this.lastZIndex],
                         this.normalNode.addChild(e),
-                        this.lastAddType = "normal"}
+                        this.lastAddType = "normal"
+                    }
                     if (s > 80 || s < -60) {
                         this.lastZIndex = this.lastZIndex + .1;
                         let i = (0,
