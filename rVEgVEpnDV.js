@@ -7212,23 +7212,10 @@
                     endCover: l,
                     updateEndScore: async e=>{
                         f.textContent = e.toString();
-                        let t = 0;
-                        try {
-                            t = (await fetch(`https://api.bilibili.com/x/web-frontend/score/score?score=${e}`, {
-                                credentials: "include"
-                            }).then((e=>e.json()))).result?.pct || 0
-                        } catch (e) {}
-                        if (t) {
-                            const e = S(t, b)
-                              , i = Math.floor(Math.random() * w[e].length);
-                            o.r1 = `你超过了<span>${t}%</span><br/>的玩家！`,
-                            o.r2 = w[e][i]
-                        } else {
-                            const t = S(e, v)
-                              , i = Math.floor(Math.random() * x[t].length);
-                            o.r1 = `恭喜你坚持了<span>${e}</span>秒！`,
-                            o.r2 = x[t][i]
-                        }
+                        const t = S(e, v)
+                          , i = Math.floor(Math.random() * x[t].length);
+                        o.r1 = `恭喜你坚持了<span>${e}</span>秒！`,
+                        o.r2 = x[t][i]
                         g.innerHTML = o.r1,
                         y.innerHTML = o.r2
                     }
@@ -8656,17 +8643,6 @@
                 if (u)
                     return;
                 u = !0;
-                let i = window.__BiliUser__?.cache?.data?.isLogin ? window.__BiliUser__?.cache?.data : null;
-                if (!i)
-                    try {
-                        const e = await r().get("//api.bilibili.com/x/web-interface/nav", {
-                            withCredentials: !0
-                        }).then((e=>e.data?.data));
-                        e.isLogin && (i = e)
-                    } catch (e) {}
-                if (!i)
-                    return window.__BiliUser__?.quickLogin(),
-                    void (u = !1);
                 const o = 'bold 30px "FZLanTYJW","PingFang SC","Microsoft YaHei", sans-serif';
                 c || (d || (d = l()),
                 await d);
@@ -8823,14 +8799,6 @@
                     t.setAttributeNS(x, "height", "44"),
                     t.setAttributeNS(x, "fill", "none"),
                     t.innerHTML = '\n      <circle cx="22.5" cy="22" r="22" fill="#FB7299"/>\n      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 16C16.5 13.2386 18.7386 11 21.5 11V21C18.7386 21 16.5 18.7614 16.5 16ZM28.5 28C28.5 25.2386 26.2614 23 23.5 23V33C26.2614 33 28.5 30.7614 28.5 28ZM23.5 21C23.5 18.2386 25.7386 16 28.5 16C31.2614 16 33.5 18.2386 33.5 21H23.5ZM16.5 28C13.7386 28 11.5 25.7614 11.5 23H21.5C21.5 25.7614 19.2614 28 16.5 28Z" fill="white"/>\n      <path d="M21.5 11H22C22 10.7239 21.7761 10.5 21.5 10.5V11ZM21.5 21V21.5C21.7761 21.5 22 21.2761 22 21H21.5ZM23.5 23V22.5C23.2239 22.5 23 22.7239 23 23H23.5ZM23.5 33H23C23 33.2761 23.2239 33.5 23.5 33.5V33ZM23.5 21H23C23 21.2761 23.2239 21.5 23.5 21.5V21ZM33.5 21V21.5C33.7761 21.5 34 21.2761 34 21H33.5ZM11.5 23V22.5C11.2239 22.5 11 22.7239 11 23H11.5ZM21.5 23H22C22 22.7239 21.7761 22.5 21.5 22.5V23ZM21.5 10.5C18.4624 10.5 16 12.9624 16 16H17C17 13.5147 19.0147 11.5 21.5 11.5V10.5ZM22 21V11H21V21H22ZM16 16C16 19.0376 18.4624 21.5 21.5 21.5V20.5C19.0147 20.5 17 18.4853 17 16H16ZM23.5 23.5C25.9853 23.5 28 25.5147 28 28H29C29 24.9624 26.5376 22.5 23.5 22.5V23.5ZM24 33V23H23V33H24ZM28 28C28 30.4853 25.9853 32.5 23.5 32.5V33.5C26.5376 33.5 29 31.0376 29 28H28ZM28.5 15.5C25.4624 15.5 23 17.9624 23 21H24C24 18.5147 26.0147 16.5 28.5 16.5V15.5ZM34 21C34 17.9624 31.5376 15.5 28.5 15.5V16.5C30.9853 16.5 33 18.5147 33 21H34ZM23.5 21.5H33.5V20.5H23.5V21.5ZM11 23C11 26.0376 13.4624 28.5 16.5 28.5V27.5C14.0147 27.5 12 25.4853 12 23H11ZM21.5 22.5H11.5V23.5H21.5V22.5ZM16.5 28.5C19.5376 28.5 22 26.0376 22 23H21C21 25.4853 18.9853 27.5 16.5 27.5V28.5Z" fill="white"/>\n    ';
-                    const i = document.createElement("div");
-                    return Object.assign(i.style, {
-                        color: "#fff",
-                        marginTop: "8px",
-                        fontSize: "14px",
-                        lineHeight: "16px"
-                    }),
-                    i.innerText = "分享至动态",
                     e.appendChild(t),
                     e.appendChild(i),
                     e
